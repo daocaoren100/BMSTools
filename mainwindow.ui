@@ -1,0 +1,481 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="windowModality">
+   <enum>Qt::NonModal</enum>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1500</width>
+    <height>800</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>1500</width>
+    <height>800</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>科列BMS调试软件</string>
+  </property>
+  <property name="iconSize">
+   <size>
+    <width>96</width>
+    <height>96</height>
+   </size>
+  </property>
+  <widget class="QWidget" name="mainWidget">
+   <property name="focusPolicy">
+    <enum>Qt::NoFocus</enum>
+   </property>
+   <property name="layoutDirection">
+    <enum>Qt::LeftToRight</enum>
+   </property>
+   <property name="autoFillBackground">
+    <bool>false</bool>
+   </property>
+   <layout class="QGridLayout" name="gridLayout">
+    <property name="leftMargin">
+     <number>2</number>
+    </property>
+    <property name="topMargin">
+     <number>2</number>
+    </property>
+    <property name="rightMargin">
+     <number>2</number>
+    </property>
+    <property name="bottomMargin">
+     <number>2</number>
+    </property>
+    <item row="0" column="0">
+     <widget class="QSplitter" name="splitter">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+      <widget class="canItemsTree" name="treeWidget" native="true">
+       <property name="minimumSize">
+        <size>
+         <width>200</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>200</width>
+         <height>16777215</height>
+        </size>
+       </property>
+      </widget>
+      <widget class="QStackedWidget" name="stackedWidget">
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>16777215</width>
+         <height>16777215</height>
+        </size>
+       </property>
+       <widget class="QWidget" name="page_BMS">
+        <layout class="QGridLayout" name="gridLayout_2">
+         <property name="leftMargin">
+          <number>0</number>
+         </property>
+         <property name="topMargin">
+          <number>0</number>
+         </property>
+         <property name="rightMargin">
+          <number>0</number>
+         </property>
+         <property name="bottomMargin">
+          <number>0</number>
+         </property>
+         <item row="0" column="0">
+          <widget class="bmuMainTabWidget" name="tabWidget_BMS">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QWidget" name="page_BTS">
+        <layout class="QGridLayout" name="gridLayout_6">
+         <property name="leftMargin">
+          <number>0</number>
+         </property>
+         <property name="topMargin">
+          <number>0</number>
+         </property>
+         <property name="rightMargin">
+          <number>0</number>
+         </property>
+         <property name="bottomMargin">
+          <number>0</number>
+         </property>
+         <item row="0" column="0">
+          <widget class="btsMainTabWidget" name="tabWidget_BTS">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QWidget" name="page_BSU">
+        <layout class="QGridLayout" name="gridLayout_3">
+         <property name="leftMargin">
+          <number>0</number>
+         </property>
+         <property name="topMargin">
+          <number>0</number>
+         </property>
+         <property name="rightMargin">
+          <number>0</number>
+         </property>
+         <property name="bottomMargin">
+          <number>0</number>
+         </property>
+         <item row="0" column="0">
+          <widget class="bsuMainTabWidget" name="tabWidget_BSU">
+           <property name="currentIndex">
+            <number>-1</number>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QWidget" name="page_BSU_VID">
+        <layout class="QGridLayout" name="gridLayout_4">
+         <property name="leftMargin">
+          <number>0</number>
+         </property>
+         <property name="topMargin">
+          <number>0</number>
+         </property>
+         <property name="rightMargin">
+          <number>0</number>
+         </property>
+         <property name="bottomMargin">
+          <number>0</number>
+         </property>
+         <item row="0" column="0">
+          <widget class="bsuVIDTabWidget" name="tabWidget_BSU_VID"/>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QWidget" name="page_BSU_PID">
+        <layout class="QGridLayout" name="gridLayout_5">
+         <property name="leftMargin">
+          <number>0</number>
+         </property>
+         <property name="topMargin">
+          <number>0</number>
+         </property>
+         <property name="rightMargin">
+          <number>0</number>
+         </property>
+         <property name="bottomMargin">
+          <number>0</number>
+         </property>
+         <item row="0" column="0">
+          <widget class="bsuPIDTabWidget" name="tabWidget_BSU_PID"/>
+         </item>
+        </layout>
+       </widget>
+      </widget>
+      <widget class="mainSider" name="widget_sider" native="true">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>350</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>350</width>
+         <height>16777215</height>
+        </size>
+       </property>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1500</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu_CAN">
+    <property name="title">
+     <string>CAN</string>
+    </property>
+    <addaction name="action_OpenCAN"/>
+    <addaction name="action_CloseCAN"/>
+    <addaction name="action_ResetCAN"/>
+   </widget>
+   <widget class="QMenu" name="menu_BMU">
+    <property name="title">
+     <string>BMU</string>
+    </property>
+    <addaction name="action_SyncSet"/>
+    <addaction name="separator"/>
+    <addaction name="action_SyncTime"/>
+    <addaction name="action_SaveParm"/>
+    <addaction name="action_RedoParm"/>
+    <addaction name="separator"/>
+    <addaction name="actionEEPROM"/>
+   </widget>
+   <widget class="QMenu" name="menu_BSU">
+    <property name="title">
+     <string>BSU</string>
+    </property>
+    <addaction name="action_BSU_ADDR"/>
+   </widget>
+   <widget class="QMenu" name="menu_Warn">
+    <property name="title">
+     <string>告警</string>
+    </property>
+    <addaction name="action_WarnParm"/>
+    <addaction name="separator"/>
+    <addaction name="action_ActWarn"/>
+    <addaction name="action_HistoryWarn"/>
+   </widget>
+   <widget class="QMenu" name="menu_Log">
+    <property name="title">
+     <string>LOG</string>
+    </property>
+    <addaction name="actionLOG"/>
+   </widget>
+   <widget class="QMenu" name="menu_UI">
+    <property name="title">
+     <string>界面</string>
+    </property>
+    <addaction name="action_Sider"/>
+   </widget>
+   <widget class="QMenu" name="menu_Data">
+    <property name="title">
+     <string>数据</string>
+    </property>
+    <addaction name="action_AutoSave"/>
+    <addaction name="action_plot"/>
+   </widget>
+   <widget class="QMenu" name="menu_Help">
+    <property name="title">
+     <string>帮助</string>
+    </property>
+    <addaction name="action_Help"/>
+    <addaction name="action_About"/>
+   </widget>
+   <addaction name="menu_CAN"/>
+   <addaction name="menu_BMU"/>
+   <addaction name="menu_BSU"/>
+   <addaction name="menu_Warn"/>
+   <addaction name="menu_Log"/>
+   <addaction name="menu_UI"/>
+   <addaction name="menu_Data"/>
+   <addaction name="menu_Help"/>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+  </widget>
+  <widget class="QStatusBar" name="statusBar">
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="sizeGripEnabled">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <action name="action_Help">
+   <property name="text">
+    <string>帮助</string>
+   </property>
+   <property name="visible">
+    <bool>false</bool>
+   </property>
+  </action>
+  <action name="action_About">
+   <property name="text">
+    <string>关于</string>
+   </property>
+  </action>
+  <action name="action_OpenCAN">
+   <property name="text">
+    <string>打开CAN</string>
+   </property>
+  </action>
+  <action name="action_CloseCAN">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="text">
+    <string>关闭CAN</string>
+   </property>
+  </action>
+  <action name="action_ResetCAN">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="text">
+    <string>复位CAN</string>
+   </property>
+  </action>
+  <action name="action_SyncSet">
+   <property name="text">
+    <string>同步配置信息</string>
+   </property>
+  </action>
+  <action name="action_SyncTime">
+   <property name="text">
+    <string>校准时间</string>
+   </property>
+  </action>
+  <action name="action_SaveParm">
+   <property name="text">
+    <string>保存当前参数</string>
+   </property>
+  </action>
+  <action name="action_RedoParm">
+   <property name="text">
+    <string>恢复默认参数</string>
+   </property>
+  </action>
+  <action name="action_WarnParm">
+   <property name="text">
+    <string>告警参数设置</string>
+   </property>
+  </action>
+  <action name="action_ActWarn">
+   <property name="text">
+    <string>活动告警</string>
+   </property>
+  </action>
+  <action name="action_HistoryWarn">
+   <property name="text">
+    <string>历史告警</string>
+   </property>
+  </action>
+  <action name="actionLOG">
+   <property name="text">
+    <string>LOG设置</string>
+   </property>
+  </action>
+  <action name="action_Sider">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="text">
+    <string>左导航</string>
+   </property>
+   <property name="visible">
+    <bool>false</bool>
+   </property>
+  </action>
+  <action name="action_AutoSave">
+   <property name="text">
+    <string>自动保存CAN数据帧</string>
+   </property>
+   <property name="toolTip">
+    <string>自动保存CAN数据帧</string>
+   </property>
+  </action>
+  <action name="action_BSU_ADDR">
+   <property name="text">
+    <string>修改BSU地址</string>
+   </property>
+  </action>
+  <action name="actionEEPROM">
+   <property name="text">
+    <string>EEPROM</string>
+   </property>
+   <property name="toolTip">
+    <string>EEPROM</string>
+   </property>
+  </action>
+  <action name="action_plot">
+   <property name="text">
+    <string>数据绘图</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <customwidgets>
+  <customwidget>
+   <class>mainSider</class>
+   <extends>QWidget</extends>
+   <header>ui_class/mainsider.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>bmuMainTabWidget</class>
+   <extends>QTabWidget</extends>
+   <header>ui_class/bmumaintabwidget.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>canItemsTree</class>
+   <extends>QWidget</extends>
+   <header>ui_class/canitemstree.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>bsuMainTabWidget</class>
+   <extends>QTabWidget</extends>
+   <header>ui_class/bsumaintabwidget.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>bsuVIDTabWidget</class>
+   <extends>QTabWidget</extends>
+   <header>ui_class/bsuvidtabwidget.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>bsuPIDTabWidget</class>
+   <extends>QTabWidget</extends>
+   <header>ui_class/bsupidtabwidget.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>btsMainTabWidget</class>
+   <extends>QTabWidget</extends>
+   <header>ui_class/btsmaintabwidget.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

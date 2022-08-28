@@ -1,0 +1,54 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>ECharts</title>
+	<script src="jquery-1.11.3.min.js" type="text/javascript"></script>
+</head>
+
+<body>
+       	<div id="Div1" style="height: 200px; width: 22.5%; float: left;border:1px solid #ccc;padding:1%;"></div>
+        <div id="Div2" style="height: 200px; width: 22.5%; float: left;border:1px solid #ccc;padding:1%;"></div>
+        <div id="Div3" style="height: 200px; width: 22.5%; float: left;border:1px solid #ccc;padding:1%;"></div>
+        <div id="Div4" style="height: 200px; width: 22.5%; float: left;border:1px solid #ccc;padding:1%;"></div>
+        <div style="height:225px"></div>	
+        <div id="Div5" style="height: 250px; width: 47%; float: left;border:1px solid #ccc;padding:1%;"></div>
+        <div id="Div6" style="height: 250px; width: 47%; float: left;border:1px solid #ccc;padding:1%;"></div>
+
+        <!--<div id="Div1" style="height: 200px; width: 200px; float: left;border:1px solid #ccc;padding:5px;"></div>
+        <div id="Div2" style="height: 200px; width: 200px; float: left;border:1px solid #ccc;padding:5px;"></div>
+        <div id="Div3" style="height: 200px; width: 200px; float: left;border:1px solid #ccc;padding:5px;"></div>
+        <div id="Div4" style="height: 200px; width: 200px; float: left;border:1px solid #ccc;padding:5px;"></div>
+        <div style="height:225px"></div>	
+        <div id="Div5" style="height: 250px; width: 400px; float: left;border:1px solid #ccc;padding:5px;"></div>
+        <div id="Div6" style="height: 250px; width: 400px; float: left;border:1px solid #ccc;padding:5px;"></div>-->
+           
+    <script src="echarts.js"></script>
+    <script src="use_echarts.js"></script>
+
+     <script language="JavaScript">            //禁止右键菜单和右键
+            if (window.event)
+                document.captureEvents(event.MOUSEUP);
+            function nocontextmenu() {
+                event.cancelBubble = true
+                event.returnValue = false;
+                return false;
+            }
+            function norightclick(e) {
+                if (window.event) {
+                    if (e.which == 2 || e.which == 3)
+                        return false;
+                }
+                else
+                    if (event.button == 2 || event.button == 3) {
+                        event.cancelBubble = true
+                        event.returnValue = false;
+                        return false;
+                    }
+            }
+            document.oncontextmenu = nocontextmenu; // for IE5+
+            document.onmousedown = norightclick; // for all others
+    </script>
+
+</body>
+</html>

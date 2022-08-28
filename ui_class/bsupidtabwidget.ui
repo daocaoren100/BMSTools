@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>bsuPIDTabWidget</class>
+ <widget class="QTabWidget" name="bsuPIDTabWidget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>300</height>
+   </rect>
+  </property>
+  <property name="font">
+   <font>
+    <family>微软雅黑</family>
+    <weight>75</weight>
+    <bold>true</bold>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>TabWidget</string>
+  </property>
+  <property name="currentIndex">
+   <number>0</number>
+  </property>
+  <widget class="BSUPidFromBsu" name="tab">
+   <attribute name="title">
+    <string>Tab 1</string>
+   </attribute>
+  </widget>
+  <widget class="BSUPidFromChannel" name="tab_2">
+   <attribute name="title">
+    <string>Tab 2</string>
+   </attribute>
+  </widget>
+  <widget class="BsuPidFromCopper" name="tab_3">
+   <attribute name="title">
+    <string>页</string>
+   </attribute>
+  </widget>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>BSUPidFromBsu</class>
+   <extends>QWidget</extends>
+   <header>bsupidfrombsu.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>BSUPidFromChannel</class>
+   <extends>QWidget</extends>
+   <header>bsupidfromchannel.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>BsuPidFromCopper</class>
+   <extends>QWidget</extends>
+   <header>bsupidfromcopper.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

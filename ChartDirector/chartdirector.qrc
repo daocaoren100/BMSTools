@@ -1,0 +1,14 @@
+<RCC>
+    <qresource prefix="/">
+        <file>ioc/Maintenance.png</file>
+        <file>ioc/Start_greed.png</file>
+        <file>ioc/Stop_red.png</file>
+        <file>ioc/add_greed.png</file>
+        <file>ioc/trash.png</file>
+        <file>ioc/return.png</file>
+        <file>ioc/ZoomIn.png</file>
+        <file>ioc/ZoomOut.png</file>
+        <file>ioc/Save.png</file>
+        <file>ioc/Open.png</file>
+    </qresource>
+</RCC>
