@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>bmuMainTabWidget</class>
+ <widget class="QTabWidget" name="bmuMainTabWidget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>300</height>
+   </rect>
+  </property>
+  <property name="font">
+   <font>
+    <family>微软雅黑</family>
+    <weight>75</weight>
+    <bold>true</bold>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>TabWidget</string>
+  </property>
+  <property name="currentIndex">
+   <number>0</number>
+  </property>
+  <widget class="generalTab" name="general_tab">
+   <attribute name="title">
+    <string>Tab 1</string>
+   </attribute>
+  </widget>
+  <widget class="bsuSetTab" name="bsuSet_tab">
+   <attribute name="title">
+    <string>Tab 2</string>
+   </attribute>
+  </widget>
+  <widget class="sysInfoTab" name="sysInfo_tab">
+   <attribute name="title">
+    <string>页</string>
+   </attribute>
+  </widget>
+  <widget class="specifyParaTab" name="specifyPara_tab">
+   <attribute name="title">
+    <string>页</string>
+   </attribute>
+  </widget>
+  <widget class="maintainParaTab" name="maintainPara_tab">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <attribute name="title">
+    <string>页</string>
+   </attribute>
+  </widget>
+  <widget class="chargeParaTab" name="chargePara_tab">
+   <attribute name="title">
+    <string>页</string>
+   </attribute>
+  </widget>
+  <widget class="advancedParaTab" name="advancedPara_tab">
+   <attribute name="title">
+    <string>页</string>
+   </attribute>
+  </widget>
+  <widget class="calibrationParaTab" name="calibrationPara_tab">
+   <attribute name="title">
+    <string>页</string>
+   </attribute>
+  </widget>
+  <widget class="toolModelTab" name="toolModel_tab">
+   <attribute name="title">
+    <string>页</string>
+   </attribute>
+  </widget>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>generalTab</class>
+   <extends>QWidget</extends>
+   <header>generaltab.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>bsuSetTab</class>
+   <extends>QWidget</extends>
+   <header>bsusettab.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>sysInfoTab</class>
+   <extends>QWidget</extends>
+   <header>sysinfotab.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>specifyParaTab</class>
+   <extends>QWidget</extends>
+   <header>specifyparatab.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>maintainParaTab</class>
+   <extends>QWidget</extends>
+   <header>maintainparatab.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>chargeParaTab</class>
+   <extends>QWidget</extends>
+   <header>chargeparatab.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>advancedParaTab</class>
+   <extends>QWidget</extends>
+   <header>advancedparatab.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>calibrationParaTab</class>
+   <extends>QWidget</extends>
+   <header>calibrationparatab.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>toolModelTab</class>
+   <extends>QWidget</extends>
+   <header>toolmodeltab.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

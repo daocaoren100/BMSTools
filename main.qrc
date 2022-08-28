@@ -1,0 +1,14 @@
+<RCC>
+    <qresource prefix="/">
+        <file>animal_bird_twitter_72px.ico</file>
+        <file>verified.ico</file>
+        <file>warning.ico</file>
+        <file>BMS_Center/Image/SOC/exclamation.png</file>
+        <file>BMS_Center/Image/SOC/0.png</file>
+        <file>BMS_Center/Image/SOC/20.png</file>
+        <file>BMS_Center/Image/SOC/40.png</file>
+        <file>BMS_Center/Image/SOC/60.png</file>
+        <file>BMS_Center/Image/SOC/80.png</file>
+        <file>BMS_Center/Image/SOC/100.png</file>
+    </qresource>
+</RCC>

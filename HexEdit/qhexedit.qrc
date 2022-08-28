@@ -1,0 +1,12 @@
+<RCC>
+    <qresource prefix="/">
+        <file>images/open.png</file>
+        <file>images/save.png</file>
+        <file>images/undo.png</file>
+        <file>images/redo.png</file>
+        <file>images/find.png</file>
+        <file>images/box_in.png</file>
+        <file>images/box_out.png</file>
+        <file>translations/qhexedit_zh_CN.qm</file>
+    </qresource>
+</RCC>

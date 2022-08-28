@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>specifyParaTab</class>
+ <widget class="QWidget" name="specifyParaTab">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>357</height>
+   </rect>
+  </property>
+  <property name="font">
+   <font>
+    <family>微软雅黑</family>
+    <weight>75</weight>
+    <bold>true</bold>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout_2">
+   <property name="spacing">
+    <number>0</number>
+   </property>
+   <property name="leftMargin">
+    <number>0</number>
+   </property>
+   <property name="topMargin">
+    <number>0</number>
+   </property>
+   <property name="rightMargin">
+    <number>0</number>
+   </property>
+   <property name="bottomMargin">
+    <number>0</number>
+   </property>
+   <item>
+    <widget class="QScrollArea" name="scrollArea">
+     <property name="widgetResizable">
+      <bool>true</bool>
+     </property>
+     <widget class="QWidget" name="scrollAreaWidgetContents">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>398</width>
+        <height>355</height>
+       </rect>
+      </property>
+      <widget class="QWidget" name="layoutWidget">
+       <property name="geometry">
+        <rect>
+         <x>30</x>
+         <y>50</y>
+         <width>191</width>
+         <height>523</height>
+        </rect>
+       </property>
+       <layout class="QVBoxLayout" name="verticalLayout" stretch="1,1,2,1,2,1,1">
+        <item>
+         <widget class="QGroupBox" name="groupBox">
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>120</height>
+           </size>
+          </property>
+          <property name="title">
+           <string>电池信息</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QGroupBox" name="groupBox_2">
+          <property name="title">
+           <string>通信</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QGroupBox" name="groupBox_3">
+          <property name="title">
+           <string>电流传感器</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QGroupBox" name="groupBox_4">
+          <property name="title">
+           <string>预充设置</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QGroupBox" name="groupBox_5">
+          <property name="title">
+           <string>继电器控制</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QGroupBox" name="groupBox_6">
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>120</height>
+           </size>
+          </property>
+          <property name="title">
+           <string>主动均衡</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QGroupBox" name="groupBox_7">
+          <property name="title">
+           <string>热管理</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

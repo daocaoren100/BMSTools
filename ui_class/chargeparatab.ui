@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>chargeParaTab</class>
+ <widget class="QWidget" name="chargeParaTab">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>300</height>
+   </rect>
+  </property>
+  <property name="font">
+   <font>
+    <family>微软雅黑</family>
+    <weight>75</weight>
+    <bold>true</bold>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout_2">
+   <property name="spacing">
+    <number>0</number>
+   </property>
+   <property name="leftMargin">
+    <number>0</number>
+   </property>
+   <property name="topMargin">
+    <number>0</number>
+   </property>
+   <property name="rightMargin">
+    <number>0</number>
+   </property>
+   <property name="bottomMargin">
+    <number>0</number>
+   </property>
+   <item>
+    <widget class="QScrollArea" name="scrollArea">
+     <property name="widgetResizable">
+      <bool>true</bool>
+     </property>
+     <widget class="QWidget" name="scrollAreaWidgetContents">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>398</width>
+        <height>298</height>
+       </rect>
+      </property>
+      <widget class="QWidget" name="layoutWidget">
+       <property name="geometry">
+        <rect>
+         <x>50</x>
+         <y>50</y>
+         <width>62</width>
+         <height>81</height>
+        </rect>
+       </property>
+       <layout class="QVBoxLayout" name="verticalLayout" stretch="2,3,7">
+        <property name="leftMargin">
+         <number>9</number>
+        </property>
+        <property name="topMargin">
+         <number>9</number>
+        </property>
+        <property name="rightMargin">
+         <number>9</number>
+        </property>
+        <property name="bottomMargin">
+         <number>9</number>
+        </property>
+        <item>
+         <widget class="QGroupBox" name="groupBox">
+          <property name="title">
+           <string/>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QGroupBox" name="groupBox_2">
+          <property name="title">
+           <string>PID</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QGroupBox" name="groupBox_3">
+          <property name="title">
+           <string>VID</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

@@ -1,0 +1,1175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>AlarmSet</class>
+ <widget class="QDialog" name="AlarmSet">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1001</width>
+    <height>714</height>
+   </rect>
+  </property>
+  <property name="font">
+   <font>
+    <family>微软雅黑</family>
+    <weight>75</weight>
+    <bold>true</bold>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>告警参数设置</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout_4">
+   <property name="leftMargin">
+    <number>0</number>
+   </property>
+   <property name="topMargin">
+    <number>0</number>
+   </property>
+   <property name="rightMargin">
+    <number>0</number>
+   </property>
+   <property name="bottomMargin">
+    <number>0</number>
+   </property>
+   <item>
+    <widget class="QScrollArea" name="scrollArea">
+     <property name="widgetResizable">
+      <bool>true</bool>
+     </property>
+     <widget class="QWidget" name="scrollAreaWidgetContents">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>999</width>
+        <height>712</height>
+       </rect>
+      </property>
+      <widget class="QWidget" name="layoutWidget">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>10</y>
+         <width>931</width>
+         <height>681</height>
+        </rect>
+       </property>
+       <layout class="QHBoxLayout" name="horizontalLayout" stretch="5,1">
+        <property name="leftMargin">
+         <number>9</number>
+        </property>
+        <property name="topMargin">
+         <number>9</number>
+        </property>
+        <property name="rightMargin">
+         <number>9</number>
+        </property>
+        <property name="bottomMargin">
+         <number>9</number>
+        </property>
+        <item>
+         <widget class="QGroupBox" name="groupBox">
+          <property name="title">
+           <string/>
+          </property>
+          <widget class="QLabel" name="label_2">
+           <property name="geometry">
+            <rect>
+             <x>75</x>
+             <y>1</y>
+             <width>48</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="text">
+            <string>切断使能</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_8">
+           <property name="geometry">
+            <rect>
+             <x>345</x>
+             <y>1</y>
+             <width>48</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="text">
+            <string>告警滤波</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label">
+           <property name="geometry">
+            <rect>
+             <x>399</x>
+             <y>1</y>
+             <width>48</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="text">
+            <string>告警使能</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_9">
+           <property name="geometry">
+            <rect>
+             <x>237</x>
+             <y>1</y>
+             <width>48</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="text">
+            <string>系统级别</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_3">
+           <property name="geometry">
+            <rect>
+             <x>129</x>
+             <y>1</y>
+             <width>48</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="text">
+            <string>一级告警</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_6">
+           <property name="geometry">
+            <rect>
+             <x>291</x>
+             <y>1</y>
+             <width>48</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="text">
+            <string>四级告警</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_7">
+           <property name="geometry">
+            <rect>
+             <x>21</x>
+             <y>1</y>
+             <width>48</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="text">
+            <string>切断延时</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_4">
+           <property name="geometry">
+            <rect>
+             <x>453</x>
+             <y>1</y>
+             <width>48</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="text">
+            <string>二级告警</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_5">
+           <property name="geometry">
+            <rect>
+             <x>183</x>
+             <y>1</y>
+             <width>48</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="text">
+            <string>三级告警</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_10">
+           <property name="geometry">
+            <rect>
+             <x>507</x>
+             <y>1</y>
+             <width>61</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="text">
+            <string>  预留  </string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_11">
+           <property name="geometry">
+            <rect>
+             <x>91</x>
+             <y>81</y>
+             <width>72</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="text">
+            <string>单体过压(mV)</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_12">
+           <property name="geometry">
+            <rect>
+             <x>91</x>
+             <y>99</y>
+             <width>72</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="text">
+            <string>单体欠压(mV)</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_13">
+           <property name="geometry">
+            <rect>
+             <x>91</x>
+             <y>117</y>
+             <width>72</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="text">
+            <string>温度过高(℃)</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_14">
+           <property name="geometry">
+            <rect>
+             <x>91</x>
+             <y>135</y>
+             <width>72</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="text">
+            <string>温度过低(℃)</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_15">
+           <property name="geometry">
+            <rect>
+             <x>91</x>
+             <y>153</y>
+             <width>90</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="text">
+            <string>电压采集断线(s)</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_16">
+           <property name="geometry">
+            <rect>
+             <x>91</x>
+             <y>171</y>
+             <width>90</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="text">
+            <string>温度采集断线(s)</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_17">
+           <property name="geometry">
+            <rect>
+             <x>91</x>
+             <y>189</y>
+             <width>72</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="text">
+            <string>压差过大(mV)</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_18">
+           <property name="geometry">
+            <rect>
+             <x>91</x>
+             <y>207</y>
+             <width>72</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="text">
+            <string>温差过大(℃)</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_19">
+           <property name="geometry">
+            <rect>
+             <x>91</x>
+             <y>225</y>
+             <width>84</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="text">
+            <string>总电压过压(V)</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_20">
+           <property name="geometry">
+            <rect>
+             <x>91</x>
+             <y>243</y>
+             <width>84</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="text">
+            <string>总电压欠压(V)</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_21">
+           <property name="geometry">
+            <rect>
+             <x>91</x>
+             <y>261</y>
+             <width>60</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="text">
+            <string>SOC过高(%)</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_22">
+           <property name="geometry">
+            <rect>
+             <x>91</x>
+             <y>279</y>
+             <width>60</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="text">
+            <string>SOC过低(%)</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_23">
+           <property name="geometry">
+            <rect>
+             <x>91</x>
+             <y>297</y>
+             <width>90</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="text">
+            <string>稳态充电过流(A)</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_24">
+           <property name="geometry">
+            <rect>
+             <x>91</x>
+             <y>315</y>
+             <width>90</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="text">
+            <string>稳态放电过流(A)</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_25">
+           <property name="geometry">
+            <rect>
+             <x>91</x>
+             <y>333</y>
+             <width>90</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="text">
+            <string>瞬态充电过流(A)</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_26">
+           <property name="geometry">
+            <rect>
+             <x>91</x>
+             <y>351</y>
+             <width>90</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="text">
+            <string>瞬态放电过流(A)</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_27">
+           <property name="geometry">
+            <rect>
+             <x>91</x>
+             <y>369</y>
+             <width>60</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="text">
+            <string>BSU离线(s)</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_28">
+           <property name="geometry">
+            <rect>
+             <x>91</x>
+             <y>387</y>
+             <width>84</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="text">
+            <string>BSU均衡故障(s)</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_29">
+           <property name="geometry">
+            <rect>
+             <x>91</x>
+             <y>405</y>
+             <width>72</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="text">
+            <string>漏电超限(mA)</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_30">
+           <property name="geometry">
+            <rect>
+             <x>91</x>
+             <y>423</y>
+             <width>48</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="text">
+            <string>预充失败</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_31">
+           <property name="geometry">
+            <rect>
+             <x>91</x>
+             <y>441</y>
+             <width>72</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="text">
+            <string>辅助触点故障</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_32">
+           <property name="geometry">
+            <rect>
+             <x>91</x>
+             <y>459</y>
+             <width>66</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="text">
+            <string>BMU自身故障</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_33">
+           <property name="geometry">
+            <rect>
+             <x>91</x>
+             <y>477</y>
+             <width>60</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="text">
+            <string>VCU离线(s)</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_34">
+           <property name="geometry">
+            <rect>
+             <x>91</x>
+             <y>495</y>
+             <width>48</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="text">
+            <string>高压异常</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_35">
+           <property name="geometry">
+            <rect>
+             <x>91</x>
+             <y>513</y>
+             <width>48</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="text">
+            <string>霍尔断线</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_56">
+           <property name="geometry">
+            <rect>
+             <x>90</x>
+             <y>586</y>
+             <width>66</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="text">
+            <string>预留告警28</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_57">
+           <property name="geometry">
+            <rect>
+             <x>90</x>
+             <y>532</y>
+             <width>72</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="text">
+            <string>预留告警25</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_58">
+           <property name="geometry">
+            <rect>
+             <x>90</x>
+             <y>622</y>
+             <width>81</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="text">
+            <string>电压异常保护</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_59">
+           <property name="geometry">
+            <rect>
+             <x>90</x>
+             <y>604</y>
+             <width>60</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="text">
+            <string>预留告警29</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_60">
+           <property name="geometry">
+            <rect>
+             <x>90</x>
+             <y>568</y>
+             <width>72</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="text">
+            <string>预留告警27</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_61">
+           <property name="geometry">
+            <rect>
+             <x>90</x>
+             <y>550</y>
+             <width>71</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="text">
+            <string>预留告警26</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_62">
+           <property name="geometry">
+            <rect>
+             <x>90</x>
+             <y>640</y>
+             <width>61</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="text">
+            <string>预留告警31</string>
+           </property>
+          </widget>
+         </widget>
+        </item>
+        <item>
+         <widget class="QGroupBox" name="groupBox_2">
+          <property name="title">
+           <string>解释</string>
+          </property>
+          <layout class="QVBoxLayout" name="verticalLayout_3">
+           <item>
+            <layout class="QVBoxLayout" name="verticalLayout">
+             <item>
+              <widget class="QLabel" name="label_36">
+               <property name="text">
+                <string>Dis Level:</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="label_37">
+               <property name="text">
+                <string>  Alarm Enable Switch(0:Disable)</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="label_38">
+               <property name="text">
+                <string>Lv1 Cut:</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="label_39">
+               <property name="text">
+                <string>  Relay Action Switch(0:No Action)</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="label_40">
+               <property name="text">
+                <string>Cut Delay:</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="label_41">
+               <property name="text">
+                <string>  Relay Action Delay Time(s)</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="label_42">
+               <property name="text">
+                <string>Alm Filter:</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="label_43">
+               <property name="text">
+                <string>  Alarm Generate Filter Time(s)</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="label_44">
+               <property name="text">
+                <string>Sys Level:</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="label_45">
+               <property name="text">
+                <string>  Reserved</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="label_46">
+               <property name="text">
+                <string>Lv2 Cut:</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="label_47">
+               <property name="text">
+                <string>  Reserved</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <spacer name="verticalSpacer_2">
+               <property name="orientation">
+                <enum>Qt::Vertical</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>20</width>
+                 <height>40</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <layout class="QVBoxLayout" name="verticalLayout_2">
+             <item>
+              <layout class="QHBoxLayout" name="horizontalLayout_2">
+               <item>
+                <widget class="QLabel" name="label_48">
+                 <property name="sizePolicy">
+                  <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+                   <horstretch>0</horstretch>
+                   <verstretch>0</verstretch>
+                  </sizepolicy>
+                 </property>
+                 <property name="text">
+                  <string/>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QLabel" name="label_49">
+                 <property name="text">
+                  <string>Alarm Enable &amp; Relay Action</string>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+             <item>
+              <layout class="QHBoxLayout" name="horizontalLayout_3">
+               <item>
+                <widget class="QLabel" name="label_50">
+                 <property name="sizePolicy">
+                  <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+                   <horstretch>0</horstretch>
+                   <verstretch>0</verstretch>
+                  </sizepolicy>
+                 </property>
+                 <property name="text">
+                  <string/>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QLabel" name="label_51">
+                 <property name="text">
+                  <string>Alarm Enable &amp; No Relay</string>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+             <item>
+              <layout class="QHBoxLayout" name="horizontalLayout_4">
+               <item>
+                <widget class="QLabel" name="label_52">
+                 <property name="sizePolicy">
+                  <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+                   <horstretch>0</horstretch>
+                   <verstretch>0</verstretch>
+                  </sizepolicy>
+                 </property>
+                 <property name="text">
+                  <string/>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QLabel" name="label_53">
+                 <property name="text">
+                  <string>Alarm Disable &amp; No Relay</string>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+             <item>
+              <layout class="QHBoxLayout" name="horizontalLayout_5">
+               <item>
+                <widget class="QLabel" name="label_54">
+                 <property name="sizePolicy">
+                  <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+                   <horstretch>0</horstretch>
+                   <verstretch>0</verstretch>
+                  </sizepolicy>
+                 </property>
+                 <property name="text">
+                  <string/>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <spacer name="horizontalSpacer">
+                 <property name="orientation">
+                  <enum>Qt::Horizontal</enum>
+                 </property>
+                 <property name="sizeHint" stdset="0">
+                  <size>
+                   <width>40</width>
+                   <height>20</height>
+                  </size>
+                 </property>
+                </spacer>
+               </item>
+              </layout>
+             </item>
+             <item>
+              <layout class="QHBoxLayout" name="horizontalLayout_6">
+               <item>
+                <widget class="QLabel" name="label_55">
+                 <property name="sizePolicy">
+                  <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+                   <horstretch>0</horstretch>
+                   <verstretch>0</verstretch>
+                  </sizepolicy>
+                 </property>
+                 <property name="text">
+                  <string/>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <spacer name="horizontalSpacer_2">
+                 <property name="orientation">
+                  <enum>Qt::Horizontal</enum>
+                 </property>
+                 <property name="sizeHint" stdset="0">
+                  <size>
+                   <width>40</width>
+                   <height>20</height>
+                  </size>
+                 </property>
+                </spacer>
+               </item>
+              </layout>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <spacer name="verticalSpacer">
+             <property name="orientation">
+              <enum>Qt::Vertical</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>20</width>
+               <height>40</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+          </layout>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
